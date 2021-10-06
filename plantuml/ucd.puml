@@ -1,0 +1,19 @@
+@startuml
+left to right direction
+actor Admin
+actor User
+rectangle "Music Label Manager Admin"{
+    Admin -- (sign new artist)
+    Admin -- (compose new song)
+    Admin -- (produce new interpretation)
+    Admin -- (publish interpretation)
+
+
+}
+rectangle "Music Label Manager User"{
+    User -- (view artists)
+    User -- (view songs)
+    User -- (view interpretation)
+    User -- (view streaming platform)
+}
+@enduml

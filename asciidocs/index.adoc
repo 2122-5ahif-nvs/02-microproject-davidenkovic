@@ -19,9 +19,14 @@ Jede Interpretation hat eine anzahl an verkauften streams die in Units gemessen 
 
 == Class Diagram
 
-image::images/cld.png[]
+[plantuml,cld,png]
+----
+include::plantuml/cld.puml[]
+----
 
 == Use Case Diagram
 
-image::images/ucd.png[]
-
+[plantuml,ucd,png]
+----
+include::plantuml/ucd.puml[]
+----

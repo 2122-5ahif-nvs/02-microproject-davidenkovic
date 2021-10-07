@@ -19,9 +19,9 @@ Jede Interpretation hat eine anzahl an verkauften streams die in Units gemessen 
 
 == Class Diagram
 
-image:images/cld.png[]
+image::images/cld.png[]
 
 == Use Case Diagram
 
-image:images/ucd.png[]
+image::images/ucd.png[]
 

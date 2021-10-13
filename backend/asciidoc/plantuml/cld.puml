@@ -1,0 +1,41 @@
+@startuml
+class Artist {
+String artistName
+String currentLabel
+
+}
+
+class Song {
+String songname
+String genre
+}
+
+class Interpretation{
+    Song song
+    Artist artists
+    int bpm
+    int songDuration
+
+}
+
+class StreamingPlatform {
+Platform platform
+int unit
+}
+
+enum Platform{
+Youtube
+Spotify
+Apple Music
+Deezer
+}
+
+
+
+Artist "1"-right-"*" Song : composes >
+Artist "1"-down-"*" Interpretation : interprets >
+Song "1"-down-"*" Interpretation : is in >
+Interpretation "1"-down-"*" StreamingPlatform : is sold at >
+
+StreamingPlatform -right- Platform : is in <
+@enduml

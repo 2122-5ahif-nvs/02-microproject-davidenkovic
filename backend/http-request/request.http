@@ -1,0 +1,24 @@
+GET http://localhost:8080/songs
+Accept: application/json
+###
+GET http://localhost:8080/songs/name?name=2Pac
+Accept: application/json
+###
+POST http://localhost:8080/songs
+Content-Type: application/json
+
+{
+  "songname": "Dear-Mama",
+  "artistName": "2pac"
+}
+###
+DELETE http://localhost:8080/songs
+Content-Type: application/json
+###
+PUT http://localhost:8080/songs/2Pac
+Content-Type: application/json
+
+{
+  "songname": "Ambitionz az a ridah",
+  "artistName": "2Pac"
+}
